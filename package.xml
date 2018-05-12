@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
-  <name>udacity_bot</name>
+  <name>slam_project</name>
   <version>0.0.0</version>
-  <description>The udacity_bot package</description>
+  <description>The slam_project package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->

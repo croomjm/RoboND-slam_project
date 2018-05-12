@@ -2,9 +2,9 @@
 
 <robot name="ultra_udacity_bot" xmlns:xacro="http://www.ros.org/wiki/xacro">
   
-  <xacro:include filename="$(find udacity_bot)/urdf/ultra_udacity_bot.gazebo" />
+  <xacro:include filename="$(find slam_project)/urdf/ultra_udacity_bot.gazebo" />
 
-  <link name="robot_footprint"></link>
+  link name="robot_footprint"></link>
 
   <joint name="robot_footprint_joint" type="fixed">
     <origin xyz="0 0 0" rpy="0 0 0" />
@@ -30,7 +30,7 @@
     <collision name='collision'>
       <origin xyz="0 0 -.08" rpy=" 0 0 210"/> 
       <geometry>
-        <mesh filename="package://udacity_bot/meshes/udacity.dae"  scale=".45 .45 .45"/>
+        <mesh filename="package://slam_project/meshes/udacity.dae"  scale=".45 .45 .45"/>
       </geometry>
     </collision>
 
@@ -38,7 +38,7 @@
       <origin xyz="0 0 -.08" rpy=" 0 0 210"/>
       <geometry>
       	<!-- model is 60 mm tall, 20 mm thick -->
-        <mesh filename="package://udacity_bot/meshes/udacity.dae" scale=".45 .45 .45"/>
+        <mesh filename="package://slam_project/meshes/udacity.dae" scale=".45 .45 .45"/>
       </geometry>
     </visual>
 
@@ -224,7 +224,7 @@
     <visual name="hokuyo_visual">
       <origin xyz="0 0 0" rpy=" 0 0 0"/> 
       <geometry>
-        <mesh filename="package://udacity_bot/meshes/hokuyo.dae"/>
+        <mesh filename="package://slam_project/meshes/hokuyo.dae"/>
       </geometry>
     </visual>
 
