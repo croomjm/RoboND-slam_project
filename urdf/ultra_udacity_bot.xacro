@@ -4,7 +4,7 @@
   
   <xacro:include filename="$(find slam_project)/urdf/ultra_udacity_bot.gazebo" />
 
-  link name="robot_footprint"></link>
+  <link name="robot_footprint"></link>
 
   <joint name="robot_footprint_joint" type="fixed">
     <origin xyz="0 0 0" rpy="0 0 0" />

@@ -25,6 +25,9 @@ output="screen" args="-urdf -param robot_description -model slam_project"/>
   <include file="$(find slam_project)/launch/amcl.launch"/>
 -->
 
+  <include file="$(find slam_project)/launch/mapping.launch"/>
+  
+
 
   <!--launch rviz-->
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find slam_project)/launch/config/robot_slam.rviz"/>
