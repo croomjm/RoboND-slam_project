@@ -1,16 +1,17 @@
-# RoboND-Localization-Project
+# RoboND-slam-project
 
-This repository contains code for the Udacity Robotics Nanodegree localization project. To run, clone the git repository to the src folder in the [Udacity Ubuntu/ROS VM](https://s3-us-west-1.amazonaws.com/udacity-robotics/Virtual+Machines/Lubuntu_071917/RoboVM_V2.1.0.zip), make the directory, and source using Udacity VM devel/setup.bash.
+This repository contains code for the Udacity Robotics Nanodegree SLAM project. It is meant to run on a dedicated workspace hosted by Udacity, but you may also be able to make it work in linux ROS on another platform with appropriate dependencies installed.
 
-The baseline robot configuration prescribed by Udacity can be run as follows:
-`roslaunch udacity_bot udacity_world.launch`
+Launch the environment as follows from within the catkin workspace:
+`roslaunch slam_project ultra_udacity_world.launch`
 
-My "upgraded" robot can be run as follows:
-`roslaunch udacity_bot ultra_udacity_world.launch`
+This command can be launched with an additional option to launch in any world as desired:
+`world:=[path to .world file]`
 
-Both launch files have been modified to concurrently launch the [AMCL](http://wiki.ros.org/amcl#Subscribed_Topics) localization node as well.
+In a separate terminal window, launch the robot teleop program to navigate around the scene:
+`roslaunch slam_project teleop.launch`
 
-In order to run the navigation_goal script, the following command should be run from catkin_ws in another terminal window:
-`rosrun udacity_bot navigation_goal`
 
-Videos of successful completion of the course can be found [here](https://youtu.be/rZfr-IhNei8) and [here](https://youtu.be/7aVs_MXItHM).
+The primary launch file has been modified to concurrently launch the [RTAB-Map](http://wiki.ros.org/rtabmap_ros) SLAM node as well.
+
+Videos of successful completion of the course can be found [here](https://youtu.be/2CB-RQJTMQY) and [here](https://youtu.be/TnGkOjb4IYg).
